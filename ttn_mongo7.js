@@ -8,7 +8,7 @@ var request = require('/usr/lib/node_modules/request')
 
 var mongodbClient=mongodb.MongoClient;
 var mongodbURI='mongodb://user:password@192.168.1.75:27017/data'
-var wurl = 'https://api.forecast.io/forecast/yourforecastioapiauth/37.8270,-122.4230'
+var wurl = 'https://api.forecast.io/forecast/yourforecastioapikey/37.8270,-122.4230'
 var weather = new Object();
 
 function showit(topic,payload) {
