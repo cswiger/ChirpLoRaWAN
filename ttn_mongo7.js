@@ -1,6 +1,7 @@
 #!/usr/bin/node
 // version 7
 //  - for new backend and authenticating queue setup with ttnctl
+// this'll log ALL your application devices and create a new mongodb collction for each unique devid
 
 var mqtt=require('/usr/lib/node_modules/mqtt')
 var mongodb=require('/usr/lib/node_modules/mongodb');
