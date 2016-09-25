@@ -45,7 +45,7 @@ function insertEvent(topic,payload) {
 
 client=mqtt.connect('mqtt://staging.thethingsnetwork.org',{username:"putyourshere",password:"andyourshere"});
 client.on('connect',function() {
- client.subscribe('yourinfo/devices/+/up');
+ client.subscribe('yourapplicationid/devices/+/up');
 });
 
 client.on('message',insertEvent);
