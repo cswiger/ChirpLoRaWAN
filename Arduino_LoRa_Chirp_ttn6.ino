@@ -38,22 +38,22 @@
 
 
 // registered with:
-// # ./ttnctl devices register personalized 02E00208 3920857a78106e9537c0eb93323b5080 646121617b4c4c63832e1f51815f8b64
-//  INFO Registered personalized device           AppSKey=646121617B4C4C63832E1F51815F8B64 DevAddr=02E00208 Flags=0 NwkSKey=3920857A78106E9537C0EB93323B5080
+// # ./ttnctl devices register personalized xxxxxxxx yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+//  INFO Registered personalized device           AppSKey=yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy DevAddr=xxxxxxxx Flags=0 NwkSKey=zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 //
 // LoRaWAN NwkSKey, network session key
 // This is the default Semtech key, which is used by the prototype TTN
 // network initially.
-static const PROGMEM u1_t NWKSKEY[16] = { 0x39, 0x20, 0x85, 0x7A, 0x78, 0x10, 0x6E, 0x95, 0x37, 0xC0, 0xEB, 0x93, 0x32, 0x3B, 0x50, 0x80 };
+static const PROGMEM u1_t NWKSKEY[16] = { 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz, 0xzz };
 
 // LoRaWAN AppSKey, application session key
 // This is the default Semtech key, which is used by the prototype TTN
 // network initially.
-static const u1_t PROGMEM APPSKEY[16] = { 0x64, 0x61, 0x21, 0x61, 0x7B, 0x4C, 0x4C, 0x63, 0x83, 0x2E, 0x1F, 0x51, 0x81, 0x5F, 0x8B, 0x64 };
+static const u1_t PROGMEM APPSKEY[16] = { 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy, 0xyy };
 
 // LoRaWAN end-device address (DevAddr)
 // See http://thethingsnetwork.org/wiki/AddressSpace
-static const u4_t DEVADDR = 0x02E00208 ; // <-- Change this address for every node - 07 is the 1st soil moisture sensor
+static const u4_t DEVADDR = 0xxxxxxxxx ; // <-- Change this address for every node 
 
 // These callbacks are only used in over-the-air activation, so they are
 // left empty here (we cannot leave them out completely unless
